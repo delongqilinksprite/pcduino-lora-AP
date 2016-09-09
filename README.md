@@ -10,15 +10,11 @@ The following content, I will introduce the details of how to DIY a low-cost Lor
 ## Required
 **pcDuino lora gateway**
 - pcDuino8 Uno x 1
-- [LoRa module](http://www.linksprite.com/wiki/index.php5?title=Low-cost_LoRa_Module) x 1
-- Linker cable x 1
-- Dupont Line x 2
+- [LoRa Radio Shield](http://www.linksprite.com/wiki/index.php5?title=Low-cost_LoRa_Module) x 1
 
 **Arduino lora node**
 - Arduino Uno x 1
-- [LoRa module](http://www.linksprite.com/wiki/index.php5?title=Low-cost_LoRa_Module)x 1
-- Linker cable x 4
-- Dupont Line x 2
+- [LoRa Radio Shield](inksprite.com/wiki/index.php5?title=Low-cost_LoRa_Module)x 1
 
 ## Steps
 
@@ -31,15 +27,16 @@ The following content, I will introduce the details of how to DIY a low-cost Lor
 |MISO|12|12|
 |MOSI|11|11|
 |NSS|10|10|
+|RST|5|5|
 |VCC|3.3V|3.3V|
 |GND|GND|GND|
 #### Arduino Lora node
 
-![](images/poorman_arduino.png)
+![](images/arduino.png)
 
 #### pcDuino Lora Gateway
 
-![](images/poorman_pcduino.png)
+![](images/pcduino.png)
 
 ### 2. Program Arduino Uno
 - Download the Arduino program from [github](https://github.com/YaoQ/pcduino-lora-AP/tree/master/arduino-node)

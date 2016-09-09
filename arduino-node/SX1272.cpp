@@ -169,7 +169,7 @@ uint8_t SX1272::ON()
     //#define USE_SPI_SETTINGS
 
 #ifdef USE_SPI_SETTINGS
-    SPI.beginTransaction(SPISettings(2000000, MSBFIRST, SPI_MODE0));
+    SPI.beginTransaction(SPISettings(200000, MSBFIRST, SPI_MODE0));
 #else
     //Configure the MISO, MOSI, CS, SPCR.
     SPI.begin();
